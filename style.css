@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #2e5663;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+main {
+  height: 100%;
+  background: white;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 7s;
+}
+
+.main-text {
+  color: #2e5663;
+  margin: 20px;
+}
+
+.main-text > h2 {
+  text-align: center;
+}
+
+#logo {
+  animation: fill 0.8s ease forwards 4.6s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 604.4829711914062px;
+  stroke-dashoffset: 604.4829711914062px;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 515.26318359375px;
+  stroke-dashoffset: 515.26318359375px;
+  animation: line-anim 2s ease forwards 0.2s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 506.44561767578125px;
+  stroke-dashoffset: 506.44561767578125px;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 239.3280029296875px;
+  stroke-dashoffset: 239.3280029296875px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 515.2635498046875px;
+  stroke-dashoffset: 515.2635498046875px;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 312.89752197265625px;
+  stroke-dashoffset: 312.89752197265625px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 433.7728576660156px;
+  stroke-dashoffset: 433.7728576660156px;
+  animation: line-anim 2s ease forwards 1.4s;
+}
+#logo path:nth-child(8) {
+  stroke-dasharray: 477.7681884765625px;
+  stroke-dashoffset: 477.7681884765625px;
+  animation: line-anim 2s ease forwards 1.6s;
+}
+#logo path:nth-child(9) {
+  stroke-dasharray: 422.4996337890625px;
+  stroke-dashoffset: 422.4996337890625px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(10) {
+  stroke-dasharray: 418.8194580078125px;
+  stroke-dashoffset: 418.8194580078125px;
+  animation: line-anim 2s ease forwards 2s;
+}
+#logo path:nth-child(11) {
+  stroke-dasharray: 314.9497375488281px;
+  stroke-dashoffset: 314.9497375488281px;
+  animation: line-anim 2s ease forwards 2.2s;
+}
+#logo path:nth-child(12) {
+  stroke-dasharray: 433.7745361328125px;
+  stroke-dashoffset: 433.7745361328125px;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+#logo path:nth-child(13) {
+  stroke-dasharray: 422.4899597167969px;
+  stroke-dashoffset: 422.4899597167969px;
+  animation: line-anim 2s ease forwards 2.6s;
+}
+
+.tagline-wrapper {
+  color: white;
+  margin-top: 10px;
+}
+
+#spacer1 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6.1s;
+}
+
+#spacer2 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6.3s;
+}
+
+#spacer3 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6.5s;
+}
+
+#title {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6s;
+}
+
+#mail {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6.2s;
+}
+
+#github-icon {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6.4s;
+}
+
+#linkedin-icon {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 6.6s;
+}
+
+.tagline-wrapper > h3 {
+  margin-right: 10px;
+}
+
+.flex-wrapper-row {
+  display: flex;
+  flex-flow: row;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  align-content: center;
+}
+
+li {
+  margin-right: 50px;
+  animation: fadeIn 0.5s ease forwards 7s;
+  opacity: 0;
+  border: 1pt solid white;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+a,
+:link,
+:visited,
+:hover,
+:active {
+  text-decoration: none;
+}
+
+li > a {
+  color: #2e5663;
+}
+h3 > a {
+  color: white;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
